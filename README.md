@@ -7,25 +7,25 @@ You can download the complete dataset here: https://drive.google.com/drive/folde
 
 Project Structure
 
-src/
-    Analysis/
-        Evaluator.h             # Compute presortedness measures on generated datasets and constructed samples 
-        MetricNormalizer.h      # Normalization of presortedness measures
-        PresortednessMetrics.h  # Calculation of presortedness measures
-        R Scripts/              # Visualization & statistical analysis
-    Data/
-        Generation/             # Array generators (permutation, multiset, k-pool, run-based)
-        Sampling/               # Sampling strategies (cluster, stratified, combined)
-    ExperimentConfigurator.h    # Experiment design: generation + sampling
-    experiment_data_input/      # Automatically generated input arrays & samples
-        permutation/
-        random_array/
-        multiset_permutation/
-        run_array/
-    experiment_data_output/     # Normalized metrics for arrays and samples
-    plots/                      # R output (coverage, distributions, scatter plots, stats)
+    src/
+        Analysis/
+            Evaluator.h             # Compute presortedness measures on generated datasets and constructed samples 
+            MetricNormalizer.h      # Normalization of presortedness measures
+            PresortednessMetrics.h  # Calculation of presortedness measures
+            R Scripts/              # Visualization & statistical analysis
+        Data/
+            Generation/             # Array generators (permutation, multiset, k-pool, run-based)
+            Sampling/               # Sampling strategies (cluster, stratified, combined)
+        ExperimentConfigurator.h    # Experiment design: generation + sampling
+        experiment_data_input/      # Automatically generated input arrays & samples
+            permutation/
+            random_array/
+            multiset_permutation/
+            run_array/
+        experiment_data_output/     # Normalized metrics for arrays and samples
+        plots/                      # R output (coverage, distributions, scatter plots, stats)
 
-tests/                          # Test for data generators, samplers and presortedness measures  
+    tests/                          # Test for data generators, samplers and presortedness measures  
 
 
 
@@ -119,11 +119,11 @@ Use Evaluator to compute normalized metrics for:
 
 Output is placed in a mirrored directory structure:
 
-experiment_data_output/
-    permutation/
-        arrays_metrics.csv
-        samples/
-            sample_metrics.csv
+    experiment_data_output/
+        permutation/
+            arrays_metrics.csv
+            samples/
+                sample_metrics.csv
 ...
 
 3. R Scripts (Visualization & Statistics)
@@ -134,7 +134,7 @@ These scripts:
 
 The results go into:
 
-src/plots/
-    coverage_plot/
-    distribution_plot/
-    scatter_plot/
+    src/plots/
+        coverage_plot/
+        distribution_plot/
+        scatter_plot/
